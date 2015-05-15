@@ -1,0 +1,98 @@
+@import url(http://fonts.googleapis.com/css?family=Signika:400,300|Inder);
+
+$orange: #ff4411;
+
+ html, body {
+  margin: 0;
+  padding: 0;
+ }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-y: scroll;
+}
+
+h1 {
+  color: $orange;
+  font-size: 54px;
+  font-family: 'Signika', sans-serif;
+}
+
+h2 {
+  color: #666;
+  font-size: 36px;
+  font-family: 'Signika', sans-serif;
+  font-weight: 400;
+}
+
+h3 {
+  color: $orange;
+  font-size: 26px;
+  font-family: 'Signika', sans-serif;
+  font-weight: 300;
+}
+
+p {
+  font-family: 'Inder', sans-serif;
+  line-height: 28px;
+  color: #333;
+  font-size: 18px;
+}
+
+a {
+  color: #ff4411;
+  transition: .5s;
+  text-decoration: none;
+
+  &:hover {
+    color: #a03c21;
+  }
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+li {
+  line-height: 30px;
+}
+
+.mainWrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.documentationMenu {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  float: left;
+  padding: 20px;
+  margin-right: -100%;
+  clear: left;
+  border-top: $orange 1px solid;
+  margin-top: 30px;
+
+  @media screen and (min-width: 800px) {
+    margin-top: 126px;
+    clear: none;
+    width: 200px;
+    border: none;
+  }
+}
+
+.documentationContent {
+  width: 100%;
+  float: left;
+  padding: 0 20px;
+  margin-right: -100%;
+
+  @media screen and (min-width: 800px) {
+    margin-left: 200px;
+    width: 600px;
+  }
+}
